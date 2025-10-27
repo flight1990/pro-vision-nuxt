@@ -1,18 +1,40 @@
 {
-  // https://nuxt.com/docs/guide/concepts/typescript
-  "files": [],
-  "references": [
-    {
-      "path": "./.nuxt/tsconfig.app.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.server.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.shared.json"
-    },
-    {
-      "path": "./.nuxt/tsconfig.node.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "types": [
+      "vite/client",
+      "node",
+      "@types/node",
+      "nuxt",
+      "vuetify"
+    ],
+    "paths": {
+      "~/*": [
+        "app/*",
+        "#types/*"
+      ],
+      "@/*": [
+        "app/*"
+      ],
+      "#types/*": [
+        "shared/types/*"
+      ]
     }
-  ]
+  },
+  "include": [
+    "app/**/*",
+    "server/**/*",
+    "shared/**/*",
+    ".nuxt/*.ts",
+    "plugins/**/*"
+  ],
+//  "references": [
+//    { "path": "./.nuxt/tsconfig.app.json" },
+//    { "path": "./.nuxt/tsconfig.server.json" },
+//    { "path": "./.nuxt/tsconfig.shared.json" },
+//    { "path": "./.nuxt/tsconfig.node.json" },
+//  ]
 }
