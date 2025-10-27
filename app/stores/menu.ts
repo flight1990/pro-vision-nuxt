@@ -1,6 +1,5 @@
 import {defineStore} from "pinia";
-import type {Menu} from "#types/Menu";
-
+import type {Menu} from "#/types/Menu";
 
 interface IMenu {
     items: Menu[]
