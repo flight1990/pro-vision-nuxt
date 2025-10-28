@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AlbumsList from "~/components/albums/AlbumsList.vue";
+
+</script>
 
 <template>
-  <div>
-    Page: albums
-  </div>
+  <AlbumsList />
 </template>

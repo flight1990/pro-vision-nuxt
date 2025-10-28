@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {shallowRef} from "vue";
 import {useMenuStore} from "~/stores/menu";
-import TheSideBar from "~/components/TheSideBar.vue";
-import TheAppBar from "~/components/TheAppBar.vue";
+import TheSideBar from "~/components/common/ui/TheSideBar.vue";
+import TheAppBar from "~/components/common/ui/TheAppBar.vue";
 
 const menuStore = useMenuStore()
 const drawer = shallowRef<boolean>(true)

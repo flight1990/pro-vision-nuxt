@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {onMounted, shallowRef} from "vue";
-import SsrLoader from "~/components/SsrLoader.vue";
+import SsrLoader from "~/components/common/ui/SsrLoader.vue";
 
 const loading = shallowRef<boolean>(true)
 

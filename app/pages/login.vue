@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseForm from "~/components/BaseForm.vue";
+import BaseForm from "~/components/common/BaseForm.vue";
 
 definePageMeta({
   layout: 'auth'
